@@ -7,10 +7,12 @@
 .KB {
     background-color:#030637;
     color: white;
+    background-image: linear-gradient(black, #030637 );
 }
 .KB_email{
     margin-left: 89px;
 }
+
 
 #komment {
     width: 500px;
@@ -27,6 +29,9 @@
 .KB_kommentek > * {
     padding: 20px;
     border: 2px solid white;
+}
+.Piros_Arany {
+    padding-left: 20px;
 }
 
 .fooldalBody {
