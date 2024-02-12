@@ -6,7 +6,8 @@
 */
 .KB {
     background-color:#030637;
-    color: white;1
+    color: white;
+    background-image: linear-gradient(black, #030637 );
 }
 .KB_email{
     margin-left: 89px;
