@@ -13,7 +13,9 @@
     margin-left: 89px;
 }
 
-
+.csillag {
+    color: red;
+}
 #komment {
     width: 500px;
     height: 100px;
@@ -34,31 +36,40 @@
     padding-left: 20px;
 }
 
+/* Viki */
 .fooldalBody {
-    background: linear-gradient(to right, black, #030637);
+    background: linear-gradient(to left, black, #030637);
+}
+
+.fooldalBody h1 {
+    text-shadow: 0 0 21px white;
 }
 
 .fooldalUl {
-    list-style-type: none;
+    list-style: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
 
-.fooldalLi {
+.fooldLi {
+    padding: 10px;
     float: left;
 }
-  
-.fooldalLi .fooldalA {
+.fooldA{
+    color: white; /* írd át valami másra, csak tesztre kellett*/
+
+}
+
+.fooldLi > * {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
   
-.fooldalLi, .fooldalA:hover:not() {
+.fooldA:hover {
     background-color: #111;
 }
 
