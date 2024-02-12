@@ -6,17 +6,40 @@
     <title>Kommentszekció</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main class="KB">
-
+<body class="KB">
+    <main>
+        <div class="KB_ujkomment">
             <h1 style="align-items: center;">Komment írása</h1>
             <br>
+            <div class="KB_fieldset">
             <fieldset>
-                <legend></legend>
+                <legend>Új komment</legend>
                 <label for="nev">Név* (3-15 karakter)</label>
-                <input type="text" name="username" id="nev" minlength="3" maxlength="15">
-                
+                <input type="text" name="username" id="nev" minlength="3" maxlength="15" class="KB_nev">
+                <br>
+                <label for="email">Email*</label>
+                <input type="email" name="email" id="email" class="KB_email"> 
+                <br>
+                <label for="komment">Komment*</label>
+                <br>
+                <input type="text" name="" id="komment">
+                <br>
+                <input type="button" value="Kész" >
+                <br>
+                <label for="anonim">Névtelenül posztolok</label>
+                <input type="checkbox" name="anonim" id="">
+                <br>
+                <label for="ertesites">E-mailben szeretnék értesítést kapni válaszokrol</label>
+                <input type="checkbox" name="ertesites" id="">
+                <br>
+                <div class="KB_kotelezo">
+                    <p> A *-al jelölteket közelező kitölteni</p>
+                </div>
             </fieldset>
+            </div>
+            <div class="KB_kommentek">
+
+            </div>
     </main>
 </body>
 </html>

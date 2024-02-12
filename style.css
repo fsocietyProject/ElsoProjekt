@@ -1,15 +1,28 @@
 /*
-#030637
+#030637 sötétkék
 #3C0753
 #720455
 #910A67
 */
+.KB {
+    background-color:#030637;
+    color: white;
+}
+.KB_email{
+    margin-left: 89px;
+}
 
-
-
-
-
-
+#komment {
+    width: 500px;
+    height: 100px;
+}
+.KB_ujkomment {
+    color: hotpink; /* sztem ez így maradhat*/
+    width: 50%;
+}
+.KB_kotelezo {
+    color: red;
+}
 
 
 
