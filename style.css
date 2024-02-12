@@ -1,13 +1,13 @@
 /*
 #030637 sötétkék
-#3C0753
-#720455
+#3C0753 #lila
+#720455 #rózsaszín
 #910A67
 */
 .KB {
     background-color:#030637;
     color: white;
-    background-image: linear-gradient(black, #030637 );
+    background-image: linear-gradient( #720455, #030637 );
 }
 .KB_email{
     margin-left: 89px;
@@ -38,7 +38,7 @@
 
 /* Viki */
 .fooldalBody {
-    background: linear-gradient(to left, black, #030637);
+    background: linear-gradient(to left, #3C0753, #030637);
 }
 
 .fooldalBody h1 {
