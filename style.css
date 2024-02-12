@@ -5,12 +5,14 @@
 #910A67
 */
 .KB {
+    margin: 0 auto;
     background-color:#030637;
     color: white;
     background-image: linear-gradient(black, #030637 );
 }
 .KB_email{
     margin-left: 89px;
+
 }
 
 .csillag {
@@ -59,7 +61,7 @@
 }
 .fooldA{
     color: white; /* írd át valami másra, csak tesztre kellett*/
-
+    
 }
 
 .fooldLi > * {
@@ -68,8 +70,12 @@
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-.fooldA:hover {
+
+.fooldA:hover, .selected {
+    background-color: #111;
+}
+.fooldA_sel { /*Azokra az oldalakra tag amin éppen vagy*/
+    color: white; /* írd át valami másra, csak tesztre kellett*/
     background-color: #111;
 }
 
