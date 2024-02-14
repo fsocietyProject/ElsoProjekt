@@ -4,7 +4,14 @@
 #720455
 #910A67
 */
+.kommentszekcio{
+    padding-left: 300px;
+    width: 90%;
+}
 .KB {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
     margin: 0 auto;
     background-color:#030637;
     color: white;
@@ -48,6 +55,8 @@
 }
 
 .fooldalUl {
+    display: flex;
+    flex-direction: row;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -80,7 +89,28 @@
 }
 
 
-
+@media screen and (max-width:700px) {
+    header,nav{
+        width: 600px;
+    }
+    .KB,header,nav{
+        margin: 0;
+        padding-left: 0px;
+        
+        font-size: 20pt;
+    }
+    .kommentszekcio{
+        margin: 0;
+        padding-left: 0px;
+        
+    }
+    .KB_kommentek{
+        width: 400px;
+    }
+    .fooldalUl{
+        flex-direction: column;
+    }
+}
 
 
 
