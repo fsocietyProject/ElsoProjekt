@@ -1,45 +1,116 @@
+/*
+#030637 sötétkék
+#3C0753
+#720455
+#910A67
+*/
+.KB {
+    margin: 0 auto;
+    background-color:#030637;
+    color: white;
+    background-image: linear-gradient(black, #030637 );
+}
+.KB_email{
+    margin-left: 89px;
+
+}
+
+.csillag {
+    color: red;
+}
+#komment {
+    width: 500px;
+    height: 100px;
+}
+.KB_ujkomment {
+    color: hotpink; /* sztem ez így maradhat*/
+    width: 50%;
+}
+.KB_kotelezo {
+    color: red;
+}
+
+.KB_kommentek > * {
+    padding: 20px;
+    border: 2px solid white;
+}
+.Piros_Arany {
+    padding-left: 20px;
+}
+
+/* Viki */
+.fooldalBody {
+    background: linear-gradient(to left, black, #030637);
+}
+
+.fooldalBody h1 {
+    text-shadow: 0 0 21px white;
+}
+
+.fooldalUl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.fooldLi {
+    padding: 10px;
+    float: left;
+}
+.fooldA{
+    color: white; /* írd át valami másra, csak tesztre kellett*/
+    
+}
+
+.fooldLi > * {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.fooldA:hover, .selected {
+    background-color: #111;
+}
+.fooldA_sel { /*Azokra az oldalakra tag amin éppen vagy*/
+    color: white; /* írd át valami másra, csak tesztre kellett*/
+    background-color: #111;
+}
+
+
+
+.Urlap {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.Urlap div {
+    margin-bottom: 20px;
+}
+.Termekek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.Termekek div h2 {
+    color: #3C0753;
+}
+.TermekGomb button {
+    color: white;
+    background-color: #910A67;
+}
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Tablet*/
+@media only screen and (max-width: 700px) {
+    .Termekek {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
