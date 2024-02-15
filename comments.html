@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommentszekció</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="KB">
+    <main>
+        <header>
+            <h1>Fsociety Movie DataBase</h1>
+        </header>
+        <nav>
+            <ul class="fooldalUl">
+                <li class="fooldLi"><a class="fooldA" href="index.html">Főoldal</a></li>
+                <li class="fooldLi"><a class="fooldA" href="">Bejelentkezés/Regisztráció</a></li>
+                <li class="fooldLi"><a class="fooldA" href="">Rendelés</a></li>
+                <li class="fooldLi"><a class="fooldA_sel" href="comments.html">Kommentszekció</a></li>
+            </ul>
+        </nav>
+        <div class="KB_ujkomment">
+            <h1 style="align-items: center;">Komment írása</h1>
+            <br>
+            <div class="KB_fieldset">
+            <fieldset>
+                <legend>Új komment</legend>
+                <label for="nev">Név<span class="csillag"> *</span> (3-15 karakter)</label>
+                <input type="text" name="username" id="nev" minlength="3" maxlength="15" class="KB_nev">
+                <br>
+                <label for="email">Email<span class="csillag"> *</span></label>
+                <input type="email" name="email" id="email" class="KB_email"> 
+                <br>
+                <label for="komment">Komment<span class="csillag"> *</span></label>
+                <br>
+                <input type="text" name="komment" id="komment">
+                <br>
+                <input type="button" value="Kész" >
+                <br>
+                <label for="anonim">Névtelenül posztolok</label>
+                <input type="checkbox" name="anonim" id="anonim">
+                <br>
+                <label for="ertesites">E-mailben szeretnék értesítést kapni válaszokrol</label>
+                <input type="checkbox" name="ertesites" id="ertesites">
+                <br>
+                <label for="tema">Film/Sorozat<span class="csillag"> *</span></label>
+                <select name="tema" id="tema">
+                    <option value="#">Mr Robot (sorozat)</option>
+                    <option value="#">Vészhelyzet (sorozat)</option>
+                    <option value="#">Dr House (sorozat)</option>
+                    <option value="#">Gracee Klinika (sorozat)</option>
+                    <option value="#">Amerikai Horrorsztori (sorozat)</option>
+                    <option value="#">Star Wars (film)</option>
+                    <option value="#">Pókverzum (film)</option>
+                    <option value="#">Oppenheimer (film)</option>
+                    <option value="#">Barbie (film)</option>
+                    <option value="#">Szárnyas Fejvadász 2049</option>
+                    <option value="0" selected hidden>Kérem válasszon</option>
+                </select>
+                <div class="KB_kotelezo">
+                    <p> A *-al jelölteket közelező kitölteni</p>
+                </div>
+            </fieldset>
+            </div>
+            <br>
+            <div class="KB_kommentek">
+                <div class="KovacsPista">
+                    <h4>Kovács Pista</h4> 
+                    <h4>Film: Barbie</h4>
+                    <p>Nem értem hogy mi ez a felhajtás a Barbie körül...</p>
+                    <p>Inkább az Oppenheimer</p>
+                    <button>Válasz</button>
+                    <div class="PirosArany">
+                        <h4>Piros Arany</h4>
+                        <p>Margot Robbie és Ryan Gostling miatt</p>
+                    </div>
+
+                </div>
+                <div class="TothLajos">
+                <h4>Tóth Lajos</h4>
+                <h4>Sorozat: Vészhelyzet</h4>
+                <p>Amióta a Carter elment Afrikába lement az egész sorozat színvonala</p>
+                <button>Válasz</button>
+                </div>
+                <div class="ThomasAnderson">
+                    <h4>Thomas Anderson</h4>
+                    <h4>Sorozat: Mr robot</h4>
+                    <p>Nehéz volt követni az elején de aztán rájöttem a lényegre, ez olyan amit többször kell megnézni. A hackelés is realisztikus volt, létező eszközökkel, technikákkal.</p>
+                    <p>10/10</p>
+                    <button>Válasz</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
