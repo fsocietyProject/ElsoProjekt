@@ -47,7 +47,7 @@
     border: 2px solid white;
 }
 .Piros_Arany {
-    padding-left: 50px;
+    padding-left: 100px;
 }
 
 /* Viki */
@@ -118,7 +118,25 @@
 }
 
 
-
+.Urlap {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.Urlap div {
+    margin-bottom: 20px;
+}
+.Termekek {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.Termekek div h2 {
+    color: #3C0753;
+}
+.TermekGomb button {
+    color: white;
+    background-color: #910A67;
+}
 
 
 

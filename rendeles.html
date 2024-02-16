@@ -355,20 +355,20 @@
 										
 										<div>
 											<label>Teljes név</label>
-											<input  name="nev" placeholder="Kis Pista" class="form-control">
+											<input  name="nev" placeholder="Kis Pista" class="form-control" pattern="[a-zA-Z]+" required size="25" required>
 										</div>
 
 
 
 										<div>
 											<label>E-Mail</label>  
-											<input name="email" placeholder="vmi@gmail.com" class="form-control">
+											<input name="email" placeholder="vmi@gmail.com" class="form-control" required pattern="^\D+\w+@\w+\.com$" size="25" required>
 										</div>
 
 									       
 
 										<div>									<label>Telefonszám</label>  
-											<input name="telefon" placeholder="06 20 1234567" class="form-control">
+											<input name="telefon" placeholder="06 20 1234567" class="form-control" require>
 										</div>
 
 
@@ -387,7 +387,7 @@
 
 
 										<div>									<label>Utca cím</label>  
-											<input name="utcacim" placeholder="Utca nev 01" class="form-control" type="text">
+											<input name="utcacim" placeholder="Utca nev 01" class="form-control" type="text" required>
 										</div>
 
 										<div>
@@ -406,7 +406,7 @@
 										        <br>
 										
 										        <label>
-										            <input type="radio" name="choose" value="no"> Nem szükséges
+										            <input type="radio" name="choose" value="no" checked> Nem szükséges
 										        </label>
 										    </div>
 
@@ -422,7 +422,8 @@
 
 
 
-										<button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal3">Megrendel</button>
+										
+                    <input type="submit" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#myModal3" value="Megrendel">
 								</div>
 								
 							</form>
