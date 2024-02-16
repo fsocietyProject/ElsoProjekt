@@ -25,11 +25,15 @@
 .csillag {
     color: red;
 }
-#komment {
+#komment{
     width: 500px;
     height: 100px;
 }
+
+#KB_kommentek, #KovacsPista {
+}
 .KB_ujkomment {
+    width: 800px;
     color: hotpink; /* sztem ez így maradhat*/
     width: 50%;
 }
@@ -38,11 +42,12 @@
 }
 
 .KB_kommentek > * {
+    width: 800px;
     padding: 20px;
     border: 2px solid white;
 }
 .Piros_Arany {
-    padding-left: 20px;
+    padding-left: 50px;
 }
 
 /* Viki */
