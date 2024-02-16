@@ -118,29 +118,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Tablet*/
+@media only screen and (max-width: 700px) {
+    .Termekek {
+        grid-template-columns: 1fr;
+    }
+}
