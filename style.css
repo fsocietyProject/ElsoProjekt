@@ -105,6 +105,49 @@
     
 }
 
+.bejForms{
+    color: white;
+    font-family: var(bs font sans-serif);
+}
+
+.bejForms > div > form > fieldset > .ures, textarea {
+    width: 200px;
+    background-color: #030637;
+    color: white;
+}
+.bejForms > div > form > fieldset {
+    border: 0px;
+}
+.bejForms > div > form > fieldset > legend {
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.bejForms > div > form > fieldset > input{
+    float: right;
+}
+.bejForms > div > form > fieldset > label{
+    margin-right: 70px;
+}
+.bejDiv1 {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
+    padding-left: 20px;
+    font-size: larger;
+}
+.bejGomb1{
+    margin-top: 80px;
+}
+.bejDiv2{
+    display: inline-block;
+    padding-top: 50px;
+    padding-left: 200px;
+    font-size: larger;
+}
+.bejGomb2{
+    margin-top: 20px;
+}
 
 @media screen and (max-width:700px) {
     header,nav{
