@@ -1,24 +1,58 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Sign in_Fsociety Movie DataBase</title>
-</head>
-<body class="fooldalBody">
+  </head>
+  <body class="fooldalBody">
     <header>
-        <h1>Fsociety Movie DataBase</h1>
+      <h1 class="bejh1">Fsociety Movie DataBase - Sign in/up</h1>
     </header>
     <nav>
-        <ul class="fooldalUl">
-            <li class="fooldLi"><a class="fooldA" href="index.html">Főoldal</a></li>
-            <li class="fooldLi"><a class="fooldA" href="bejelentk.html">Bejelentkezés/Regisztráció</a></li>
-            <li class="fooldLi"><a class="fooldA" href="rendeles.html">Rendelés</a></li>
-            <li class="fooldLi"><a class="fooldA" href="comments.html">Kommentszekció</a></li>
-        </ul>
+      <ul class="fooldalUl">
+        <li class="fooldLi"><a class="fooldA" href="index.html">Főoldal</a></li>
+        <li class="fooldLi">
+          <a class="fooldA" href="bejelentk.html">Bejelentkezés/Regisztráció</a>
+        </li>
+        <li class="fooldLi">
+          <a class="fooldA" href="rendeles.html">Rendelés</a>
+        </li>
+        <li class="fooldLi">
+          <a class="fooldA" href="comments.html">Kommentszekció</a>
+        </li>
+      </ul>
     </nav>
-    <main></main>
+    <main>
+        <form class="bejelentkezes" action="index.html">
+            <fieldset>
+                <legend>Bejelentkezés</legend>
+                <label for="fnev">Felhasználó név:</label>
+                <input type="text" id="fnev" name="fnev"><br>
+                <label for="pwd">Jelszó:</label>
+                <input type="password" id="pwd" name="pwd"><br>
+                <input type="submit" value="Bejelentkezés">
+            </fieldset>
+        </form>
+
+        <form class="regisztracio" action="index.html">
+            <fieldset>
+                <legend>Regisztráció</legend>
+                <label for="vnev">Vezetéknév:</label>
+                <input type="text" id="vnev" name="vnev"><br>
+                <label for="knev">Keresztnév:</label>
+                <input type="text" id="knev" name="knev"><br>
+                <label for="szul">Születési dátum:</label>
+                <input type="date" id="szul" name="szul"><br>
+                <label>e-mail</label>  
+				<input name="email" placeholder="vmi@gmail.com" class="form-control" required pattern="^\D+\w+@\w+\.com$" size="25" required><br>
+                <label for="pwd">Jelszó:</label>
+                <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Legalább 8 karakter"><br>
+                <input type="submit" value="Regisztráció">
+            </fieldset>
+        </form>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>

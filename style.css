@@ -54,9 +54,17 @@
 .fooldalBody {
     background: linear-gradient(to left, #3C0753, #030637);
 }
+.bejh1{
+    margin: 0, 0, 8;
+}
 
-.fooldalBody h1 {
-    text-shadow: 0 0 21px white;
+.fooldalBody h1, .bejh1 {
+    font-size: 40;
+    color:  white;
+    font-family: copperplate, fantasy;
+}
+#carouselExampleControls1{
+    margin-top: 30px;
 }
 
 .fooldalUl {
@@ -91,6 +99,10 @@
 .fooldA_sel { /*Azokra az oldalakra tag amin éppen vagy*/
     color: white; /* írd át valami másra, csak tesztre kellett*/
     background-color: #111;
+}
+.h2alsoCarouselek{
+    color: white;
+    
 }
 
 
