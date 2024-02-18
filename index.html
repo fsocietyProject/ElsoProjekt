@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="style.css">
     <title>Fsociety Movie DataBase</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Saját CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="fooldalBody">
     <header>
@@ -22,82 +22,122 @@
         </ul>
     </nav>
     <main>
-		<div class="container">  
-			<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			  <!-- Indicators -->
-			  <ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			  </ol>
-		  
-			  <!-- Wrapper for slides -->
-			  <div class="carousel-inner">
-				<div class="item active">
-				  <img src="slideshow/amerikai_h.png" alt="Amerikai Horror Sztori" style="width:100%;">
-				</div>
-		  
-				<div class="item">
-				  <img src="slideshow/avatar.jpg" alt="Avatár" style="width:100%;">
-				</div>
-			  
-				<div class="item">
-				  <img src="slideshow/spider.webp" alt="Pókverzum" style="width:100%;">
-				</div>
-			  </div>
-		  
-			  <!-- Left and right controls -->
-			  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			  </a>
-			  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			  </a>
-			</div>
-		  </div>
-	</main>
+        <div class="container">
+            <!-- Első Carousel -->
+            <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="slideshow/amerikai_h.png" class="d-block w-100" alt="Amerikai Horror Sztori">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slideshow/avatar.jpg" class="d-block w-100" alt="Avatár">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slideshow/spider.webp" class="d-block w-100" alt="Pókverzum">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slideshow/barbie.jpg" class="d-block w-100" alt="Barbie">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="slideshow/starWars.webp" class="d-block w-100" alt="Star Wars">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+            <!-- Második Carousel -->
+            <div id="carouselExampleControls2" class="carousel slide mt-4" data-bs-ride="carousel">
+				<h2>Általad kedveltek alapján</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/amerikaiHorrorS.webp" class="d-block w-100" alt="Amerikai Horrorsztori">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/Avatar-poszter.webp" class="d-block w-100" alt="Avatar">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/barbie.jpg" class="d-block w-100" alt="Barbie">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/drHouse.jpg" class="d-block w-100" alt="dr. House">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/graceKlinika.jpg" class="d-block w-100" alt="Grace Klinika">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/mrRobot.jpg" class="d-block w-100" alt="Mr. Robot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+			<!-- Harmadik -->
+			<div id="carouselExampleControls3" class="carousel slide mt-4" data-bs-ride="carousel">
+				<h2>Mert megnézted: NCIS Los Angeles</h2>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/nagyPenzrablas.webp" class="d-block w-100" alt="Nagy pénzrablás">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/oppenheimer.jpg" class="d-block w-100" alt="Oppenheimer">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/pokverzum.jpg" class="d-block w-100" alt="Pókverzum">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/starWarsf.jpg" class="d-block w-100" alt="Star Wars">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/starWarsMando.jpg" class="d-block w-100" alt="Baby Joda">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="filmplakatok_kep/szarnyasfejvadasz.webp" class="d-block w-100" alt="Szárnyas fejvadász">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main>
     <footer></footer>
+
+    <!-- Bootstrap 5 JS és szükséges fájlok -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
