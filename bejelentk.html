@@ -24,34 +24,37 @@
         </li>
       </ul>
     </nav>
-    <main>
-        <form class="bejelentkezes" action="index.html">
-            <fieldset>
-                <legend>Bejelentkezés</legend>
-                <label for="fnev">Felhasználó név:</label>
-                <input type="text" id="fnev" name="fnev"><br>
-                <label for="pwd">Jelszó:</label>
-                <input type="password" id="pwd" name="pwd"><br>
-                <input type="submit" value="Bejelentkezés">
-            </fieldset>
-        </form>
-
-        <form class="regisztracio" action="index.html">
-            <fieldset>
-                <legend>Regisztráció</legend>
-                <label for="vnev">Vezetéknév:</label>
-                <input type="text" id="vnev" name="vnev"><br>
-                <label for="knev">Keresztnév:</label>
-                <input type="text" id="knev" name="knev"><br>
-                <label for="szul">Születési dátum:</label>
-                <input type="date" id="szul" name="szul"><br>
-                <label>e-mail</label>  
-				<input name="email" placeholder="vmi@gmail.com" class="form-control" required pattern="^\D+\w+@\w+\.com$" size="25" required><br>
-                <label for="pwd">Jelszó:</label>
-                <input type="password" id="pwd" name="pwd" pattern=".{8,}" title="Legalább 8 karakter"><br>
-                <input type="submit" value="Regisztráció">
-            </fieldset>
-        </form>
+    <main class="bejForms">        
+        <div class="bejDiv1">
+            <form class="bejelentkezes" action="index.html">
+                <fieldset>
+                    <legend>Bejelentkezés</legend>
+                    <label for="fnev">Felhasználó név:</label>
+                    <input class="ures" type="text" id="fnev" name="fnev"><br>
+                    <label for="pwd">Jelszó:</label>
+                    <input class="ures" type="password" id="pwd" name="pwd"><br>
+                    <input class="bejGomb1" type="submit" value="Bejelentkezés">
+                </fieldset>
+            </form>
+        </div>
+        <div class="bejDiv2">
+            <form class="regisztracio" action="index.html">
+                <fieldset>
+                    <legend>Regisztráció</legend>
+                    <label for="vnev">Vezetéknév:</label>
+                    <input class="form-control ures" type="text" id="vnev" name="vnev"><br>
+                    <label for="knev">Keresztnév:</label>
+                    <input class="form-control ures" type="text" id="knev" name="knev"><br>
+                    <label for="szul">Születési dátum:</label>
+                    <input type="date" id="szul" name="szul"><br>
+                    <label>e-mail</label>  
+                    <input name="email" placeholder="vmi@gmail.com" class="form-control ures" required pattern="^\D+\w+@\w+\.com$" size="25" required><br>
+                    <label for="pwd">Jelszó:</label>
+                    <input class="form-control ures" type="password" id="pwd" name="pwd" pattern=".{8,}" title="Legalább 8 karakter"><br>
+                    <input class="bejGomb2" type="submit" value="Regisztráció">
+                </fieldset>
+            </form>
+        </div>       
     </main>
     <footer></footer>
   </body>
